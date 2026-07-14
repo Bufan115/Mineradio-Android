@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
             "var _origFetch = window.fetch;" +
             "window.__apiBase = "https://YOUR-RAILWAY-URL.up.railway.app"; window.fetch = function(url, opts) { if (typeof url === \"string\" \u0026\u0026 url.startsWith(\"/api/\")) { url = window.__apiBase + url; }" +
             "  if (typeof url === 'string' && url.startsWith('/api/')) {" +
-            "    if (window.AndroidBridge) window.AndroidBridge.showToast('闂団偓鐟曚礁鎮楃粩顖涙箛閸斺€虫珤閺€顖涘瘮鐎瑰本鏆ｉ崝鐔诲厴');" +
+            "    if (window.AndroidBridge) window.AndroidBridge.showToast('测试！！');" +
             "    return Promise.resolve({json:function(){return Promise.resolve({error:'backend not available',loggedIn:false,playlists:[],tracks:[],songs:[]});}});" +
             "  }" +
             "  return _origFetch.call(window, url, opts);" +
